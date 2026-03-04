@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Alguien ha visto a este Rey? - ¡Propiedad de Ali!</title>
+    <style>
+        /* Estilos Generales y Tipografía */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Tipografía estilo graffiti/spray para titulares */
+        h1, h2, .destacado-rojo {
+            font-family: 'Courier New', Courier, monospace; /* Un sustituto simple para un look más urbano */
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Encabezado */
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #333;
+            color: #fff;
+            border-bottom: 5px solid red;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: red;
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+            color: #fff;
+        }
+
+        /* Sección de la Foto */
+        .seccion-foto {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Estilo para la foto imitando el cartel */
+        .marco-foto {
+            display: inline-block;
+            padding: 15px;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            position: relative;
+            box-shadow: 5px 5px 0 #ddd;
+        }
+
+        /* Simulación de la cinta aislante */
+        .marco-foto::before, .marco-foto::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 30px;
+            background-color: #333;
+            opacity: 0.8;
+        }
+
+        .marco-foto::before { top: -15px; left: -15px; transform: rotate(-45deg); }
+        .marco-foto::after { top: -15px; right: -15px; transform: rotate(45deg); }
+
+        .marco-foto .cinta-abajo-izq, .marco-foto .cinta-abajo-der {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 30px;
+            background-color: #333;
+            opacity: 0.8;
+            bottom: -15px;
+        }
+
+        .marco-foto .cinta-abajo-izq { left: -15px; transform: rotate(45deg); }
+        .marco-foto .cinta-abajo-der { right: -15px; transform: rotate(-45deg); }
+
+        /* Estilo para el marcador de posición de la imagen */
+        .placeholder-imagen {
+            width: 300px;
+            height: 300px;
+            background-color: #eee;
+            border: 2px dashed #bbb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        /* Superposiciones de graffiti (solo para el look) */
+        .graffiti-overlay {
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Sección de Información */
+        .seccion-info {
+            padding: 40px 0;
+        }
+
+        .info-block {
+            margin-bottom: 30px;
+        }
+
+        .info-block h3 {
+            border-left: 5px solid red;
+            padding-left: 15px;
+            font-size: 1.4em;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .info-block p {
+            font-size: 1.1em;
+            margin-left: 20px;
+        }
+
+        /* Destacado en Rojo */
+        .destacado-rojo {
+            color: red;
+            font-size: 1.3em;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Pié de Página */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #eee;
+            border-top: 1px solid #ddd;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        .recompensa {
+            font-size: 1.5em;
+            color: red;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        /* Ajustes para Móviles */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2em; }
+            header h2 { font-size: 1.2em; }
+            .placeholder-imagen { width: 250px; height: 250px; }
+            .container { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>¿ALGUIEN HA VISTO A ESTE REY?</h1>
+            <h2>¡¡¡PROPIEDAD DE ALI!!!</h2>
+        </header>
+
+        <section class="seccion-foto">
+            <div class="marco-foto">
+                <div class="placeholder-imagen">
+                    [ FOTO AQUÍ ]
+                </div>
+                <div class="cinta-abajo-izq"></div>
+                <div class="cinta-abajo-der"></div>
+            </div>
+            <div class="graffiti-overlay">¡¡¡PROPIEDAD DE ALI!!!</div>
+        </section>
+
+        <section class="seccion-info">
+            
+            <div class="info-block">
+                <h3>DESCRIPCIÓN DE LA BÚSQUEDA</h3>
+                <p><strong>Propiedad de:</strong> Ali (¡¡¡Y lo quiere de vuelta!!!)</p>
+                <p>Un individuo excepcional, alegre y de gran corazón. Es ese amigo que siempre te saca una sonrisa, el alma de la fiesta y, claramente, un "Rey" para quienes lo conocen. ¡Se le echa mucho de menos!</p>
+            </div>
+
+            <div class="info-block">
+                <h3>ÚLTIMA VEZ VISTO</h3>
+                <p>En las pistas de pádel. ¡Estaba jugando un partido muy intenso!</p>
+            </div>
+
+            <div class="info-block">
+                <h3>PUNTOS CLAVE DE LA BÚSQUEDA</h3>
+                <p>Tras una intensa investigación y basándonos en sus hábitos más probables, nuestro equipo de búsqueda ha determinado que es <strong>altamente probable</strong> que se encuentre en:</p>
+                
+                <div class="destacado-rojo">C-202 DE LA CASA DE LA RADIO</div>
+                <p style="text-align: center; font-style: italic;">"Seguramente, como siempre, <strong>estará ahí metido estudiando</strong>."</p>
+                <p>Si estás por la zona o puedes pasarte por allí, ¡echa un vistazo y avísanos!</p>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="recompensa">RECOMPENSA DE 5 €</div>
+            <p><strong>Cualquier información es crucial.</strong></p>
+            <p>Por favor, contacta con nosotros si sabes algo.</p>
+            <p><strong>📞 INFO: 61222</strong></p>
+            <p style="color: red; font-weight: bold; text-transform: uppercase;">¡CUIDADO! ES MUY ASUSTADIZO.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
